@@ -42,7 +42,7 @@ for k_parc = 1:n_parc_vec
     ED = parc_data.(parc_lbl).ED; % Euclidean distance
     W = parc_data.(parc_lbl).SC; % weighted SC
     A = double(~~W); % binary SC
-    L = log_transform(W); % -log10(W); % connection lengths
+    L = log_transform(W); % connection lengths
     S = diag(sum(W,1));
 
     %%% Communication matrices
