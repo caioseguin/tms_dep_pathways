@@ -19,6 +19,7 @@ fprintf('Load data...\n');
 
 addpath data/
 addpath func/
+addpath external/
 addpath pre_computed_results/
 
 %%% Load TMS coordinates and clinical improvement for cohort I (Weigand et al 2018)
@@ -309,6 +310,8 @@ for i = 1:length(stim_block_unique)
                 
                 path_string_inter = [path_string_inter, '_', num2str(path(k)), '_'];
                 path_string_labels_inter = [path_string_labels_inter, '_', parc_labels{path(k)}, '_'];
+
+                mediator_matrix(path(k),k) = mediator_matrix(path(k),k) + n_stim_taget;
 
             end
 

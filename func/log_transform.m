@@ -8,7 +8,6 @@ function L = log_transform(C, offset)
 
     % Check if C has values larger than 1
     if ~isempty(find(C >= 1, 1))
-        % fprintf('Normalizing C to values between 0 and 1.\nUsing offset = %f to avoid maximum value of 1\n', offset);
         C = C./(max(C(:)) + offset); 
     end
 
