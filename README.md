@@ -2,7 +2,7 @@
 
 Seguin et al. 2025, _medRxiv_ (https://doi.org/10.1101/2025.02.10.25322034).
 
-Execute _run_analyses.m_ to perform the main analyses of "Neuroanatomical pathways of TMS therapy for depression". 
+Execute _run_analyses.m_ to perform the main analyses of "Neuroanatomical pathways of TMS therapy for depression" (requires MATLAB R2019b or later versions).
 
 Here, we consider data from Weigand et al. 2018, _Biol Psych_ (Cohort I), a group of 25 patients with depression who received TMS treatment to the left DLPFC. Network communication models are computed in the normative connectome datasets from Mansour et al. 2021, _NeuroImage_ and Griffa et al. 2019, _Zenodo_ using functions from the _Brain Connectivity Toolbox_ (Rubinov & Sporns 2010, _NeuroImage_).
 
